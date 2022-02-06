@@ -59,7 +59,7 @@ formSearch.addEventListener('submit', imageSearch);
     const galleryCard = hits.map(item => 
       `<div class="photo-card">
       <a href="${item.largeImageURL}" class="gallery__link">
-      <img src="${item.previewURL}" alt="${item.tags}" loading="lazy" width='150' height='100' /></a>
+      <img src="${item.largeImageURL}" alt="${item.tags}" loading="lazy" class="photo-card__img"/></a>
     <div class="info">
       <p class="info-item">
         <b>Likes: ${item.likes}</b>
